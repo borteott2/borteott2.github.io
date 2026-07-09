@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BORTEO TT j.d.o.o. | Poslovno i tehničko savjetovanje</title>
+
+<meta name="description" content="BORTEO TT j.d.o.o. pruža profesionalne usluge poslovnog, tehničkog i IT savjetovanja za razvoj i optimizaciju poslovanja.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#fffaf2;
+color:#333;
+line-height:1.7;
+
+}
+
+
+img{
+
+max-width:100%;
+display:block;
+
+}
+
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+
+section{
+
+padding:90px 0;
+
+}
+
+
+h1,h2,h3{
+
+color:#292929;
+margin-bottom:20px;
+
+}
+
+
+p{
+
+margin-bottom:15px;
+
+}
+
+
+a{
+
+text-decoration:none;
+
+}
+
+
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+border-radius:40px;
+background:#e98b05;
+color:white;
+font-weight:600;
+transition:.3s;
+
+}
+
+
+.btn:hover{
+
+background:#c96f00;
+
+}
+
+
+/* HEADER */
+
+
+header{
+
+min-height:100vh;
+
+background:
+
+linear-gradient(
+rgba(35,25,10,.65),
+rgba(35,25,10,.65)
+),
+
+url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=80")
+
+center/cover;
+
+color:white;
+
+}
+
+
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 0;
+
+}
+
+
+
+.logo{
+
+font-size:30px;
+font-weight:700;
+color:white;
+
+}
+
+
+
+nav ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+font-size:15px;
+font-weight:500;
+
+}
+
+
+nav ul li a:hover{
+
+color:#ffc857;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+min-height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+color:white;
+max-width:900px;
+margin:auto;
+margin-bottom:25px;
+
+}
+
+
+
+.hero p{
+
+max-width:780px;
+margin:0 auto 35px;
+font-size:19px;
+color:#f5f5f5;
+
+}
+
+
+
+/* COMMON */
+
+
+.section-title{
+
+text-align:center;
+margin-bottom:55px;
+
+}
+
+
+.section-title h2{
+
+font-size:38px;
+
+}
+
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:18px;
+
+box-shadow:
+
+0 10px 35px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-7px);
+
+}
+
+
+
+.card img{
+
+height:220px;
+width:100%;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:20px;
+
+}
+
+
+
+.orange{
+
+background:#fff2dc;
+
+}
+
+
+
+/* PROCESS 3+1 */
+
+
+.process-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+
+.process-grid .card:last-child{
+
+grid-column:2 / 3;
+
+}
+
+
+
+/* CTA */
+
+
+.cta{
+
+background:
+
+linear-gradient(
+135deg,
+#e98b05,
+#ffbd59
+);
+
+text-align:center;
+color:white;
+
+}
+
+
+
+.cta h2{
+
+color:white;
+font-size:38px;
+
+}
+
+
+.cta p{
+
+max-width:750px;
+margin:20px auto 35px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#252525;
+color:#ddd;
+padding:45px 0;
+text-align:center;
+
+}
+
+
+
+footer h3{
+
+color:white;
+
+}
+
+
+
+/* FORM */
+
+
+input,
+textarea{
+
+font-family:'Poppins',sans-serif;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+nav{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+
+.process-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.process-grid .card:last-child{
+
+grid-column:auto;
+
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="container">
+
+
+<nav>
+
+<div class="logo">
+
+BORTEO TT j.d.o.o.
+
+</div>
+
+
+<ul>
+
+<li><a href="#usluge">Usluge</a></li>
+
+<li><a href="#prednosti">Prednosti</a></li>
+
+<li><a href="#proces">Proces rada</a></li>
+
+<li><a href="#onama">O nama</a></li>
+
+<li><a href="#kontakt">Kontakt</a></li>
+
+</ul>
+
+
+</nav>
+
+
+
+<div class="hero">
+
+
+<div>
+
+
+<h1>
+
+Stručna poslovna rješenja za održivi rast
+
+</h1>
+
+
+<p>
+
+BORTEO TT j.d.o.o. pruža usluge poslovnog,
+tehničkog i IT savjetovanja koje pomažu tvrtkama
+unaprijediti procese, optimizirati poslovanje i ostvariti
+dugoročne rezultate.
+
+</p>
+
+
+<a href="#kontakt" class="btn">
+
+Zatražite konzultacije
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<section id="usluge">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>Naše usluge</h2>
+
+<p>
+Pružamo stručne savjetodavne usluge koje pomažu organizacijama
+unaprijediti poslovanje, povećati učinkovitost i ostvariti održivi razvoj.
+</p>
+
+</div>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=80" alt="Management consulting">
+
+
+<h3>Management consulting</h3>
+
+
+<p>
+Pomažemo upravljanju organizacijama kroz analizu poslovnih procesa,
+strateško planiranje i pronalaženje učinkovitih rješenja za razvoj poslovanja.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80" alt="Technical consulting">
+
+
+<h3>Technical consulting</h3>
+
+
+<p>
+Pružamo tehničko savjetovanje usmjereno na optimizaciju sustava,
+poboljšanje infrastrukture i primjenu suvremenih tehnoloških rješenja.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="IT podrška">
+
+
+<h3>IT podrška</h3>
+
+
+<p>
+Podržavamo tvrtke u korištenju informacijskih tehnologija,
+rješavanju tehničkih izazova i unapređenju digitalnog poslovnog okruženja.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80" alt="Business consulting">
+
+
+<h3>Business consulting</h3>
+
+
+<p>
+Analiziramo poslovne potrebe i predlažemo prilagođene strategije
+koje omogućuju bolje rezultate i konkurentniji položaj na tržištu.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&w=900&q=80" alt="Marketing consulting">
+
+
+<h3>Marketing consulting</h3>
+
+
+<p>
+Razvijamo marketinške pristupe koji povećavaju vidljivost,
+jačaju komunikaciju s kupcima i podržavaju poslovni rast.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Digitalna rješenja">
+
+
+<h3>Digitalna i softverska rješenja</h3>
+
+
+<p>
+Savjetujemo pri odabiru i primjeni digitalnih alata,
+softverskih rješenja i tehnologija koje olakšavaju svakodnevno poslovanje.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="prednosti" class="orange">
+
+
+<div class="container">
+
+
+
+<div class="section-title">
+
+<h2>Naše prednosti</h2>
+
+
+<p>
+Kombiniramo stručnost, analitički pristup i razumijevanje poslovnih potreba
+kako bismo pružili kvalitetna rješenja.
+</p>
+
+
+</div>
+
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<h3>Prilagođena rješenja</h3>
+
+
+<p>
+Svako poslovanje ima svoje izazove. Zato razvijamo pristupe
+koji su prilagođeni specifičnim ciljevima i potrebama klijenta.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>Stručan pristup</h3>
+
+
+<p>
+Na temelju analize i iskustva pružamo jasne preporuke
+koje omogućuju kvalitetnije poslovne odluke.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>Usmjerenost na rezultate</h3>
+
+
+<p>
+Naš fokus je stvaranje praktičnih rješenja koja doprinose
+većoj učinkovitosti i dugoročnoj vrijednosti.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<section id="proces">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<h2>Kako radimo</h2>
+
+
+<p>
+Naš pristup temelji se na jasnom procesu, otvorenoj komunikaciji
+i rješenjima prilagođenima poslovnim ciljevima klijenata.
+</p>
+
+
+</div>
+
+
+
+<div class="process-grid">
+
+
+
+<div class="card">
+
+
+<h3>1. Analiza potreba</h3>
+
+
+<p>
+Upoznajemo vaše poslovanje, postojeće izazove i ciljeve kako bismo
+precizno definirali područja za poboljšanje.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>2. Planiranje rješenja</h3>
+
+
+<p>
+Na temelju prikupljenih informacija izrađujemo preporuke i strategiju
+koja odgovara vašim poslovnim prioritetima.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>3. Provedba i podrška</h3>
+
+
+<p>
+Pomažemo u primjeni dogovorenih rješenja te pružamo stručnu podršku
+tijekom cijelog procesa suradnje.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>4. Kontinuirano unapređenje</h3>
+
+
+<p>
+Pratimo rezultate, analiziramo mogućnosti poboljšanja i predlažemo
+daljnje korake za održivi razvoj poslovanja.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="onama" class="orange">
+
+
+<div class="container">
+
+
+
+<div class="section-title">
+
+
+<h2>O nama</h2>
+
+
+</div>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+
+<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Poslovno savjetovanje">
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<p>
+BORTEO TT j.d.o.o. je tvrtka specijalizirana za poslovno,
+tehničko i IT savjetovanje. Pomažemo organizacijama unaprijediti
+procese, učinkovitije koristiti resurse i razvijati održive poslovne modele.
+</p>
+
+
+<p>
+Naš cilj je pružiti kvalitetna savjetodavna rješenja koja povezuju
+poslovne potrebe, moderne tehnologije i praktične mogućnosti razvoja.
+</p>
+
+
+<p>
+Kroz profesionalan pristup i razumijevanje tržišnih izazova gradimo
+dugoročne odnose temeljene na povjerenju i kvaliteti.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<div class="container">
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<h3>Naša misija</h3>
+
+
+<p>
+Naša misija je pružiti pouzdane savjetodavne usluge koje organizacijama
+omogućuju bolje odluke, učinkovitije poslovanje i održivi rast.
+</p>
+
+
+<p>
+Usmjereni smo na stvaranje stvarne vrijednosti kroz stručnost,
+inovativan pristup i razumijevanje potreba svakog klijenta.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>Naše vrijednosti</h3>
+
+
+<p>
+Temelj našeg rada čine profesionalnost, odgovornost, transparentnost,
+pouzdanost i kontinuirano unapređenje.
+</p>
+
+
+<p>
+Vjerujemo u otvorenu komunikaciju i partnerski odnos koji omogućuje
+dugoročan uspjeh svih uključenih strana.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<section class="orange">
+
+
+<div class="container">
+
+
+
+<div class="section-title">
+
+
+<h2>Naši prioriteti</h2>
+
+
+<p>
+Usmjereni smo na područja koja stvaraju najveću vrijednost za naše klijente
+i dugoročno unapređuju njihovo poslovanje.
+</p>
+
+
+</div>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<h3>Kvaliteta usluge</h3>
+
+
+<p>
+Svaki projekt temeljimo na stručnosti, preciznoj analizi i pažljivo
+definiranim rješenjima koja odgovaraju stvarnim poslovnim potrebama.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>Digitalna transformacija</h3>
+
+
+<p>
+Pomažemo organizacijama bolje koristiti moderne tehnologije
+i prilagoditi poslovne procese suvremenim zahtjevima tržišta.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>Dugoročna vrijednost</h3>
+
+
+<p>
+Naš pristup nije usmjeren samo na kratkoročna rješenja,
+već na stvaranje stabilnih temelja za budući razvoj.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<div class="container">
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<h3>Naša vizija</h3>
+
+
+<p>
+Naša vizija je biti pouzdan partner organizacijama koje žele unaprijediti
+svoje poslovanje kroz kvalitetno savjetovanje, moderne tehnologije
+i učinkovita poslovna rješenja.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h3>Naši principi</h3>
+
+
+<p>
+Radimo prema principima profesionalnosti, jasne komunikacije,
+odgovornosti i stalnog razvoja znanja kako bismo osigurali visoku razinu usluge.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="cta">
+
+
+<div class="container">
+
+
+
+<h2>
+Unaprijedite svoje poslovanje uz stručnu podršku
+</h2>
+
+
+
+<p>
+Bez obzira trebate li poslovno savjetovanje, tehničku podršku,
+IT rješenja ili razvoj marketinške strategije, BORTEO TT j.d.o.o.
+pomaže vam pronaći učinkovita rješenja prilagođena vašim ciljevima.
+</p>
+
+
+
+<a href="#kontakt" class="btn" style="background:white;color:#d97706;">
+
+Kontaktirajte nas
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+<section id="kontakt">
+
+
+<div class="container">
+
+
+
+<div class="section-title">
+
+
+<h2>Kontakt</h2>
+
+
+<p>
+Imate pitanje ili želite razgovarati o mogućnostima suradnje?
+Pošaljite nam poruku i rado ćemo vam odgovoriti.
+</p>
+
+
+</div>
+
+
+
+
+<div class="cards">
+
+
+
+
+
+<div class="card">
+
+
+<h3>Kontakt informacije</h3>
+
+
+
+<p>
+
+<strong>Adresa:</strong><br>
+
+Željeznička ulica 17<br>
+
+10430 Domaslovec<br>
+
+Zagrebačka županija<br>
+
+</p>
+
+
+
+
+<p>
+
+<strong>E-mail:</strong><br>
+
+contact@borteott.org 
+
+</p>
+
+
+
+
+<p>
+
+Naš tim pruža stručnu podršku u području poslovnog,
+tehničkog i IT savjetovanja.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>Pošaljite nam poruku</h3>
+
+
+
+
+<form id="contactForm">
+
+
+
+<label>
+Ime i prezime
+</label>
+
+
+<input 
+type="text"
+id="name"
+placeholder="Unesite ime i prezime"
+required
+style="
+width:100%;
+padding:14px;
+margin:10px 0 18px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+
+
+
+
+<label>
+E-mail
+</label>
+
+
+
+<input 
+type="email"
+id="email"
+placeholder="Unesite e-mail adresu"
+required
+style="
+width:100%;
+padding:14px;
+margin:10px 0 18px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+
+
+
+
+
+<label>
+Poruka
+</label>
+
+
+
+
+<textarea
+
+id="message"
+
+rows="6"
+
+placeholder="Napišite svoju poruku"
+
+required
+
+style="
+width:100%;
+padding:14px;
+margin:10px 0 18px;
+border:1px solid #ddd;
+border-radius:8px;
+resize:none;
+">
+
+</textarea>
+
+
+
+
+
+<div id="formMessage" style="
+margin-bottom:15px;
+font-weight:600;
+">
+</div>
+
+
+
+
+
+<button 
+type="submit"
+class="btn"
+style="
+border:none;
+cursor:pointer;
+">
+
+Pošalji poruku
+
+</button>
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+
+<div class="container">
+
+
+<h3>
+
+BORTEO TT j.d.o.o.
+
+</h3>
+
+
+<p>
+
+Poslovno savjetovanje • Tehničko savjetovanje • IT podrška •
+Poslovna strategija • Marketing savjetovanje
+
+</p>
+
+
+<p style="margin-top:20px;">
+
+© 2026 BORTEO TT j.d.o.o. Sva prava pridržana.
+
+</p>
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+<script>
+
+
+const contactForm = document.getElementById("contactForm");
+
+
+contactForm.addEventListener("submit", function(event){
+
+
+event.preventDefault();
+
+
+
+const name = document.getElementById("name").value.trim();
+
+const email = document.getElementById("email").value.trim();
+
+const message = document.getElementById("message").value.trim();
+
+const formMessage = document.getElementById("formMessage");
+
+
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+
+
+if(name === ""){
+
+
+formMessage.style.color = "red";
+
+formMessage.textContent = "Molimo unesite ime i prezime.";
+
+return;
+
+
+}
+
+
+
+
+if(email === "" || !emailPattern.test(email)){
+
+
+formMessage.style.color = "red";
+
+formMessage.textContent = "Molimo unesite ispravnu e-mail adresu.";
+
+return;
+
+
+}
+
+
+
+
+
+if(message.length < 10){
+
+
+formMessage.style.color = "red";
+
+formMessage.textContent = "Poruka mora sadržavati najmanje 10 znakova.";
+
+return;
+
+
+}
+
+
+
+
+
+formMessage.style.color = "green";
+
+formMessage.textContent = "Hvala! Vaša poruka je uspješno zaprimljena. Kontaktirat ćemo vas uskoro.";
+
+
+
+contactForm.reset();
+
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
